@@ -5,6 +5,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { Genre } from "../hooks/useGenres";
 import { GameQuery } from "../App";
+import GameHeading from "./GameHeading";
 
 interface Props {
   gameQuery: GameQuery;
@@ -16,6 +17,7 @@ const GameGrid = ({ gameQuery }: Props) => {
   return (
     <>
       {error && <Text>error.message</Text>}
+      <GameHeading gameQuery={gameQuery} />
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 5 }}
         padding={10}

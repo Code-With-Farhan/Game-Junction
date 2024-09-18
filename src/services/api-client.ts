@@ -6,4 +6,3 @@ export default axios.create({
     key: import.meta.env.VITE_RAWG_KEY,
   },
 });
-console.log("API URL:", import.meta.env.VITE_RAWG_KEY);
